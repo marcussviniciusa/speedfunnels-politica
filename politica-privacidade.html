@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Política de Privacidade - SpeedFunnels</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary-color: #4361EE;
+      --secondary-color: #3A0CA3;
+      --text-color: #333;
+      --text-light: #666;
+      --bg-color: #f8f9fa;
+      --border-color: #e9ecef;
+      --shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    }
+    
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    
+    body {
+      font-family: 'Inter', Arial, sans-serif;
+      line-height: 1.7;
+      color: var(--text-color);
+      background-color: var(--bg-color);
+      max-width: 100%;
+      margin: 0;
+      padding: 0;
+    }
+    
+    .header {
+      background-color: #fff;
+      box-shadow: var(--shadow);
+      padding: 20px 0;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+    
+    .header-content {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+    
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      text-decoration: none;
+    }
+    
+    .logo-text {
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: var(--primary-color);
+    }
+    
+    .app-info {
+      background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+      color: white;
+      padding: 40px 0;
+      text-align: center;
+    }
+    
+    .app-info-content {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+    
+    .app-title {
+      font-size: 2rem;
+      margin-bottom: 15px;
+      font-weight: 700;
+    }
+    
+    .app-description {
+      font-size: 1.1rem;
+      max-width: 800px;
+      margin: 0 auto 20px auto;
+      opacity: 0.9;
+    }
+    
+    .app-cta {
+      display: inline-block;
+      background-color: white;
+      color: var(--primary-color);
+      padding: 12px 25px;
+      border-radius: 50px;
+      font-weight: 600;
+      text-decoration: none;
+      transition: all 0.3s ease;
+      margin-top: 10px;
+    }
+    
+    .app-cta:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    }
+    
+    .container {
+      max-width: 1100px;
+      margin: 40px auto;
+      padding: 40px;
+      background-color: #fff;
+      box-shadow: var(--shadow);
+      border-radius: 12px;
+    }
+    
+    .breadcrumb {
+      margin-bottom: 25px;
+      color: var(--text-light);
+      font-size: 0.9rem;
+    }
+    
+    .breadcrumb a {
+      color: var(--primary-color);
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+    
+    .breadcrumb a:hover {
+      text-decoration: underline;
+    }
+    
+    h1 {
+      color: var(--text-color);
+      margin-bottom: 15px;
+      font-size: 2.2rem;
+      font-weight: 700;
+    }
+    
+    .date {
+      color: var(--text-light);
+      font-size: 0.9rem;
+      margin-bottom: 40px;
+      padding-bottom: 20px;
+      border-bottom: 1px solid var(--border-color);
+    }
+    
+    h2 {
+      color: var(--text-color);
+      margin-top: 35px;
+      margin-bottom: 20px;
+      font-size: 1.5rem;
+      font-weight: 600;
+    }
+    
+    p {
+      margin-bottom: 20px;
+    }
+    
+    ul {
+      margin-bottom: 25px;
+      padding-left: 20px;
+    }
+    
+    li {
+      margin-bottom: 10px;
+    }
+    
+    .section {
+      margin-bottom: 40px;
+      padding-bottom: 20px;
+      border-bottom: 1px solid var(--border-color);
+    }
+    
+    .section:last-child {
+      border-bottom: none;
+      margin-bottom: 0;
+    }
+    
+    .footer {
+      background-color: #fff;
+      padding: 30px 0;
+      border-top: 1px solid var(--border-color);
+    }
+    
+    .footer-content {
+      max-width: 1100px;
+      margin: 0 auto;
+      text-align: center;
+      padding: 0 20px;
+    }
+    
+    .footer-links {
+      margin: 20px 0;
+    }
+    
+    .footer-links a {
+      color: var(--primary-color);
+      text-decoration: none;
+      margin: 0 15px;
+      transition: color 0.2s;
+    }
+    
+    .footer-links a:hover {
+      text-decoration: underline;
+    }
+    
+    .copyright {
+      color: var(--text-light);
+      font-size: 0.9rem;
+      margin-top: 20px;
+    }
+    
+    @media (max-width: 768px) {
+      .container {
+        padding: 30px 20px;
+        margin: 20px;
+      }
+      
+      h1 {
+        font-size: 1.8rem;
+      }
+      
+      .header-content, .app-info-content {
+        padding: 0 20px;
+      }
+      
+      .app-title {
+        font-size: 1.8rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header class="header">
+    <div class="header-content">
+      <a href="https://app.speedfunnels.online" class="logo">
+        <span class="logo-text">SpeedFunnels</span>
+      </a>
+      <div>
+        <a href="https://app.speedfunnels.online" class="app-cta">Acessar Aplicativo</a>
+      </div>
+    </div>
+  </header>
+
+  <section class="app-info">
+    <div class="app-info-content">
+      <h2 class="app-title">Meta Ads Analytics Tool</h2>
+      <p class="app-description">
+        Uma ferramenta avançada para análise e otimização de campanhas de anúncios no Facebook e Instagram.
+        Maximize seu ROI e tome decisões baseadas em dados com o SpeedFunnels.
+      </p>
+      <a href="https://app.speedfunnels.online" class="app-cta">Experimentar Agora</a>
+    </div>
+  </section>
+
+  <div class="container">
+    <div class="breadcrumb">
+      <a href="https://app.speedfunnels.online">Início</a> > Política de Privacidade
+    </div>
+
+    <h1>Política de Privacidade</h1>
+    <div class="date">Última atualização: 17 de março de 2025</div>
+    
+    <div class="section">
+      <h2>1. Introdução</h2>
+      <p>
+        A SpeedFunnels ("nós", "nosso" ou "empresa") está comprometida em proteger sua privacidade. 
+        Esta Política de Privacidade explica como coletamos, usamos, divulgamos e protegemos suas 
+        informações pessoais quando você utiliza nosso serviço Meta Ads Analytics Tool 
+        ("Serviço").
+      </p>
+      <p>
+        Ao utilizar nosso Serviço, você concorda com a coleta e uso de informações de acordo com
+        esta política. As informações pessoais que coletamos são utilizadas para fornecer e
+        melhorar o Serviço. Não usaremos ou compartilharemos suas informações com ninguém, exceto
+        conforme descrito nesta Política de Privacidade.
+      </p>
+    </div>
+
+    <div class="section">
+      <h2>2. Coleta e Uso de Informações</h2>
+      <p>
+        Para proporcionar uma melhor experiência ao utilizar nosso Serviço, podemos solicitar que
+        você nos forneça certas informações pessoalmente identificáveis, incluindo, mas não se
+        limitando a:
+      </p>
+      <ul>
+        <li>Endereço de e-mail</li>
+        <li>Nome</li>
+        <li>Informações do seu perfil de negócios no Meta</li>
+        <li>Dados de acesso às suas contas de anúncios no Meta</li>
+        <li>Informações de campanhas publicitárias</li>
+      </ul>
+      <p>
+        As informações que coletamos são utilizadas para:
+      </p>
+      <ul>
+        <li>Fornecer e manter nosso Serviço</li>
+        <li>Notificá-lo sobre mudanças em nosso Serviço</li>
+        <li>Permitir sua participação em recursos interativos do nosso Serviço</li>
+        <li>Fornecer suporte ao cliente</li>
+        <li>Gerar análises e relatórios sobre suas campanhas publicitárias</li>
+        <li>Monitorar o uso do Serviço</li>
+        <li>Detectar, prevenir e resolver problemas técnicos</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2>3. Integração com Meta Ads e Acesso a Dados</h2>
+      <p>
+        Nosso Serviço integra-se às APIs do Meta Marketing para acessar dados de suas campanhas de 
+        anúncios. Quando você conecta sua conta do Meta ao nosso Serviço, solicitamos permissões
+        específicas, que incluem:
+      </p>
+      <ul>
+        <li>ads_management: permite gerenciar campanhas de anúncios</li>
+        <li>ads_read: permite ler dados de campanhas de anúncios</li>
+        <li>business_management: permite acessar informações de contas empresariais</li>
+      </ul>
+      <p>
+        Estas permissões nos permitem acessar apenas os dados necessários para fornecer os
+        serviços solicitados. Não compartilhamos esses dados com terceiros sem sua autorização
+        explícita, exceto conforme descrito nesta política.
+      </p>
+    </div>
+
+    <div class="section">
+      <h2>4. Cookies e Tecnologias de Rastreamento</h2>
+      <p>
+        Utilizamos cookies e tecnologias similares para rastrear a atividade em nosso Serviço e
+        armazenar determinadas informações. Cookies são arquivos com pequena quantidade de dados
+        que podem incluir um identificador exclusivo anônimo.
+      </p>
+      <p>
+        Você pode instruir seu navegador a recusar todos os cookies ou indicar quando um cookie
+        está sendo enviado. No entanto, se você não aceitar cookies, poderá não conseguir usar
+        algumas partes do nosso Serviço.
+      </p>
+      <p>
+        Exemplos de cookies que utilizamos:
+      </p>
+      <ul>
+        <li>Cookies de Sessão: Utilizados para operar nosso Serviço.</li>
+        <li>Cookies de Preferência: Utilizados para lembrar suas preferências e configurações.</li>
+        <li>Cookies de Segurança: Utilizados para fins de segurança.</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2>5. Segurança de Dados</h2>
+      <p>
+        A segurança de seus dados é importante para nós, mas lembre-se que nenhum método de
+        transmissão pela Internet ou método de armazenamento eletrônico é 100% seguro. Enquanto
+        nos esforçamos para usar meios comercialmente aceitáveis para proteger suas informações
+        pessoais, não podemos garantir sua segurança absoluta.
+      </p>
+      <p>
+        Implementamos várias medidas de segurança quando um usuário insere, submete ou acessa suas
+        informações, incluindo:
+      </p>
+      <ul>
+        <li>Utilização de criptografia SSL/TLS para todas as comunicações</li>
+        <li>Armazenamento de senhas com hash seguro</li>
+        <li>Armazenamento seguro de tokens de acesso a APIs</li>
+        <li>Revisões regulares de segurança e proteção contra vulnerabilidades</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2>6. Compartilhamento de Dados</h2>
+      <p>
+        Não vendemos, comercializamos ou transferimos suas informações pessoais identificáveis
+        para terceiros, exceto conforme descrito abaixo:
+      </p>
+      <ul>
+        <li>
+          <strong>Provedores de Serviço:</strong> Podemos compartilhar suas informações com
+          terceiros que realizam serviços em nosso nome, como hospedagem, análise de dados e
+          suporte ao cliente.
+        </li>
+        <li>
+          <strong>Conformidade Legal:</strong> Podemos divulgar suas informações quando acreditamos
+          que a divulgação é necessária para cumprir com a lei, fazer cumprir nossas políticas do
+          site, ou proteger nossos direitos ou a segurança de outros.
+        </li>
+        <li>
+          <strong>Transferências de Negócios:</strong> No caso de fusão, aquisição ou venda de
+          ativos, suas informações pessoais podem ser transferidas como parte dos ativos.
+        </li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2>7. Seus Direitos</h2>
+      <p>
+        Se você é residente da União Europeia, você tem certos direitos de proteção de dados. Nosso
+        objetivo é tomar medidas razoáveis para permitir que você corrija, altere, exclua ou limite
+        o uso de suas informações pessoais.
+      </p>
+      <p>
+        Você tem o direito de:
+      </p>
+      <ul>
+        <li>Acessar e receber uma cópia das informações pessoais que temos sobre você</li>
+        <li>Retificar ou apagar suas informações pessoais</li>
+        <li>Restringir o processamento de suas informações pessoais</li>
+        <li>Solicitar a portabilidade de suas informações pessoais</li>
+        <li>Retirar seu consentimento a qualquer momento</li>
+      </ul>
+      <p>
+        Para exercer qualquer um desses direitos, entre em contato conosco através das informações
+        de contato fornecidas no final desta política.
+      </p>
+    </div>
+
+    <div class="section">
+      <h2>8. Retenção de Dados</h2>
+      <p>
+        Reteremos suas informações pessoais apenas pelo tempo necessário para os fins estabelecidos
+        nesta Política de Privacidade. Manteremos e usaremos suas informações na medida necessária
+        para cumprir nossas obrigações legais, resolver disputas e fazer cumprir nossos acordos.
+      </p>
+      <p>
+        Ao cancelar sua conta, podemos manter algumas informações por um período limitado para
+        cumprir requisitos legais e administrativos.
+      </p>
+    </div>
+
+    <div class="section">
+      <h2>9. Alterações a Esta Política de Privacidade</h2>
+      <p>
+        Podemos atualizar nossa Política de Privacidade periodicamente. Notificaremos você sobre
+        quaisquer alterações publicando a nova Política de Privacidade nesta página e atualizando a
+        data de "última atualização" no topo desta página.
+      </p>
+      <p>
+        Recomendamos que você revise esta Política de Privacidade periodicamente para quaisquer
+        alterações. Alterações a esta Política de Privacidade são efetivas quando publicadas nesta
+        página.
+      </p>
+    </div>
+
+    <div class="section">
+      <h2>10. Contato</h2>
+      <p>
+        Se você tiver alguma dúvida sobre esta Política de Privacidade, entre em contato conosco:
+      </p>
+      <ul>
+        <li>Por e-mail: privacy@speedfunnels.com</li>
+        <li>Pelo site: https://app.speedfunnels.online/contato</li>
+      </ul>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-links">
+        <a href="https://app.speedfunnels.online">Início</a>
+        <a href="termos-de-servico.html">Termos de Serviço</a>
+        <a href="politica-privacidade.html">Política de Privacidade</a>
+      </div>
+      <div class="copyright">
+        &copy; 2025 SpeedFunnels. Todos os direitos reservados.
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

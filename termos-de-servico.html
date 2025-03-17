@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Termos de Serviço - SpeedFunnels</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary-color: #4361EE;
+      --secondary-color: #3A0CA3;
+      --text-color: #333;
+      --text-light: #666;
+      --bg-color: #f8f9fa;
+      --border-color: #e9ecef;
+      --shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    }
+    
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    
+    body {
+      font-family: 'Inter', Arial, sans-serif;
+      line-height: 1.7;
+      color: var(--text-color);
+      background-color: var(--bg-color);
+      max-width: 100%;
+      margin: 0;
+      padding: 0;
+    }
+    
+    .header {
+      background-color: #fff;
+      box-shadow: var(--shadow);
+      padding: 20px 0;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+    
+    .header-content {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+    
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      text-decoration: none;
+    }
+    
+    .logo-text {
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: var(--primary-color);
+    }
+    
+    .app-info {
+      background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+      color: white;
+      padding: 40px 0;
+      text-align: center;
+    }
+    
+    .app-info-content {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+    
+    .app-title {
+      font-size: 2rem;
+      margin-bottom: 15px;
+      font-weight: 700;
+    }
+    
+    .app-description {
+      font-size: 1.1rem;
+      max-width: 800px;
+      margin: 0 auto 20px auto;
+      opacity: 0.9;
+    }
+    
+    .app-cta {
+      display: inline-block;
+      background-color: white;
+      color: var(--primary-color);
+      padding: 12px 25px;
+      border-radius: 50px;
+      font-weight: 600;
+      text-decoration: none;
+      transition: all 0.3s ease;
+      margin-top: 10px;
+    }
+    
+    .app-cta:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    }
+    
+    .container {
+      max-width: 1100px;
+      margin: 40px auto;
+      padding: 40px;
+      background-color: #fff;
+      box-shadow: var(--shadow);
+      border-radius: 12px;
+    }
+    
+    .breadcrumb {
+      margin-bottom: 25px;
+      color: var(--text-light);
+      font-size: 0.9rem;
+    }
+    
+    .breadcrumb a {
+      color: var(--primary-color);
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+    
+    .breadcrumb a:hover {
+      text-decoration: underline;
+    }
+    
+    h1 {
+      color: var(--text-color);
+      margin-bottom: 15px;
+      font-size: 2.2rem;
+      font-weight: 700;
+    }
+    
+    .date {
+      color: var(--text-light);
+      font-size: 0.9rem;
+      margin-bottom: 40px;
+      padding-bottom: 20px;
+      border-bottom: 1px solid var(--border-color);
+    }
+    
+    h2 {
+      color: var(--text-color);
+      margin-top: 35px;
+      margin-bottom: 20px;
+      font-size: 1.5rem;
+      font-weight: 600;
+    }
+    
+    p {
+      margin-bottom: 20px;
+    }
+    
+    ul {
+      margin-bottom: 25px;
+      padding-left: 20px;
+    }
+    
+    li {
+      margin-bottom: 10px;
+    }
+    
+    .section {
+      margin-bottom: 40px;
+      padding-bottom: 20px;
+      border-bottom: 1px solid var(--border-color);
+    }
+    
+    .section:last-child {
+      border-bottom: none;
+      margin-bottom: 0;
+    }
+    
+    .footer {
+      background-color: #fff;
+      padding: 30px 0;
+      border-top: 1px solid var(--border-color);
+    }
+    
+    .footer-content {
+      max-width: 1100px;
+      margin: 0 auto;
+      text-align: center;
+      padding: 0 20px;
+    }
+    
+    .footer-links {
+      margin: 20px 0;
+    }
+    
+    .footer-links a {
+      color: var(--primary-color);
+      text-decoration: none;
+      margin: 0 15px;
+      transition: color 0.2s;
+    }
+    
+    .footer-links a:hover {
+      text-decoration: underline;
+    }
+    
+    .copyright {
+      color: var(--text-light);
+      font-size: 0.9rem;
+      margin-top: 20px;
+    }
+    
+    @media (max-width: 768px) {
+      .container {
+        padding: 30px 20px;
+        margin: 20px;
+      }
+      
+      h1 {
+        font-size: 1.8rem;
+      }
+      
+      .header-content, .app-info-content {
+        padding: 0 20px;
+      }
+      
+      .app-title {
+        font-size: 1.8rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header class="header">
+    <div class="header-content">
+      <a href="https://app.speedfunnels.online" class="logo">
+        <span class="logo-text">SpeedFunnels</span>
+      </a>
+      <div>
+        <a href="https://app.speedfunnels.online" class="app-cta">Acessar Aplicativo</a>
+      </div>
+    </div>
+  </header>
+
+  <section class="app-info">
+    <div class="app-info-content">
+      <h2 class="app-title">Meta Ads Analytics Tool</h2>
+      <p class="app-description">
+        Uma ferramenta avançada para análise e otimização de campanhas de anúncios no Facebook e Instagram.
+        Maximize seu ROI e tome decisões baseadas em dados com o SpeedFunnels.
+      </p>
+      <a href="https://app.speedfunnels.online" class="app-cta">Experimentar Agora</a>
+    </div>
+  </section>
+
+  <div class="container">
+    <div class="breadcrumb">
+      <a href="https://app.speedfunnels.online">Início</a> > Termos de Serviço
+    </div>
+
+    <h1>Termos de Serviço</h1>
+    <div class="date">Última atualização: 17 de março de 2025</div>
+    
+    <div class="section">
+      <p>
+        Por favor, leia estes Termos de Serviço ("Termos", "Termos de Serviço") cuidadosamente
+        antes de usar o Meta Ads Analytics Tool ("Serviço") operado pela SpeedFunnels
+        ("nós", "nosso" ou "empresa").
+      </p>
+      <p>
+        Seu acesso e uso do Serviço está condicionado à sua aceitação e conformidade com estes 
+        Termos. Estes Termos se aplicam a todos os visitantes, usuários e outras pessoas que 
+        acessam ou usam o Serviço.
+      </p>
+      <p>
+        Ao acessar ou usar o Serviço, você concorda em cumprir estes Termos. Se você não concordar
+        com qualquer parte dos termos, você não terá permissão para acessar o Serviço.
+      </p>
+    </div>
+
+    <div class="section">
+      <h2>1. Contas</h2>
+      <p>
+        Quando você cria uma conta conosco, você deve fornecer informações precisas, completas e 
+        atualizadas em todos os momentos. Informações imprecisas, incompletas ou desatualizadas 
+        podem resultar no encerramento imediato de sua conta em nosso Serviço.
+      </p>
+      <p>
+        Você é responsável por proteger a senha que você usa para acessar o Serviço e por 
+        quaisquer atividades ou ações sob sua senha, seja com nosso Serviço ou um serviço de 
+        terceiros.
+      </p>
+      <p>
+        Você concorda em não divulgar sua senha a terceiros. Você deve nos notificar imediatamente
+        após tomar conhecimento de qualquer violação de segurança ou uso não autorizado de sua 
+        conta.
+      </p>
+    </div>
+
+    <div class="section">
+      <h2>2. Integração com Meta Ads</h2>
+      <p>
+        Nosso Serviço permite que você conecte sua conta do Meta Ads para acessar e analisar seus
+        dados de publicidade. Ao conectar sua conta, você:
+      </p>
+      <ul>
+        <li>
+          Autoriza nossa aplicação a acessar seus dados de acordo com as permissões concedidas 
+          (ads_management, ads_read, business_management)
+        </li>
+        <li>
+          Confirma que tem autoridade para conceder tal acesso às contas que você conecta
+        </li>
+        <li>
+          Entende que devemos seguir os termos e políticas do Meta Platform, e que mudanças nessas
+          políticas podem afetar nossa capacidade de fornecer certos aspectos do Serviço
+        </li>
+      </ul>
+      <p>
+        Você pode revogar o acesso da nossa aplicação às suas contas do Meta a qualquer momento,
+        tanto através do nosso Serviço quanto diretamente nas configurações da sua conta no Meta.
+      </p>
+    </div>
+
+    <div class="section">
+      <h2>3. Uso do Serviço</h2>
+      <p>
+        Você concorda em usar o Serviço apenas para fins legais e de acordo com estes Termos. Você
+        concorda em não usar o Serviço:
+      </p>
+      <ul>
+        <li>
+          De qualquer maneira que viole qualquer lei ou regulamento nacional ou internacional 
+          aplicável.
+        </li>
+        <li>
+          Para explorar, prejudicar ou tentar explorar ou prejudicar menores de qualquer forma 
+          expondo-os a conteúdo inadequado.
+        </li>
+        <li>
+          Para transmitir, ou procurar enviar, qualquer material publicitário ou promocional, 
+          incluindo qualquer "lixo eletrônico", "spam" ou qualquer outra solicitação similar.
+        </li>
+        <li>
+          Para se passar por ou tentar se passar por outra pessoa ou entidade.
+        </li>
+        <li>
+          De qualquer maneira que possa danificar, desativar, sobrecarregar ou prejudicar o Serviço,
+          ou interferir no uso de qualquer outra parte do Serviço.
+        </li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2>4. Tarifas e Pagamentos</h2>
+      <p>
+        Alguns aspectos do nosso Serviço são oferecidos com uma assinatura paga. Você será cobrado
+        antecipadamente em uma base recorrente, dependendo do tipo de assinatura selecionado.
+      </p>
+      <p>
+        Para assinaturas pagas:
+      </p>
+      <ul>
+        <li>
+          Você autoriza-nos a cobrar o método de pagamento selecionado para a assinatura escolhida.
+        </li>
+        <li>
+          As assinaturas serão renovadas automaticamente, a menos que você cancele antes do próximo
+          ciclo de cobrança.
+        </li>
+        <li>
+          Os reembolsos são concedidos de acordo com nossa política de reembolso especificada no site.
+        </li>
+      </ul>
+      <p>
+        Reservamo-nos o direito de alterar os preços de nossas ofertas. Se ocorrer uma alteração de
+        preço, notificaremos você com antecedência.
+      </p>
+    </div>
+
+    <div class="section">
+      <h2>5. Propriedade Intelectual</h2>
+      <p>
+        O Serviço e seu conteúdo original, recursos e funcionalidades são e permanecerão propriedade
+        exclusiva da SpeedFunnels e seus licenciadores. O Serviço é protegido por direitos autorais,
+        marcas registradas e outras leis de propriedade intelectual.
+      </p>
+      <p>
+        Nossos logotipos e nomes comerciais são marcas registradas da nossa empresa. Você não deve
+        usá-los sem nossa prévia aprovação por escrito.
+      </p>
+      <p>
+        Em relação aos dados e relatórios gerados pelo Serviço:
+      </p>
+      <ul>
+        <li>
+          Os relatórios gerados com base nos seus dados de publicidade são de sua propriedade.
+        </li>
+        <li>
+          Nós reivindicamos propriedade sobre o formato, design e estrutura dos relatórios,
+          mas não sobre o conteúdo ou dados específicos contidos neles.
+        </li>
+        <li>
+          Você concorda em não reproduzir, duplicar, copiar ou revender qualquer parte do Serviço,
+          incluindo nossos modelos de relatórios, exceto conforme expressamente permitido por estes
+          Termos.
+        </li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2>6. Limitação de Responsabilidade</h2>
+      <p>
+        Em nenhum caso a SpeedFunnels, seus diretores, funcionários, parceiros, agentes, fornecedores
+        ou afiliados serão responsáveis por quaisquer danos indiretos, incidentais, especiais,
+        consequenciais ou punitivos, incluindo, sem limitação, perda de lucros, dados, uso, boa
+        vontade, ou outras perdas intangíveis, resultantes de:
+      </p>
+      <ul>
+        <li>
+          Seu acesso ou uso ou incapacidade de acessar ou usar o Serviço;
+        </li>
+        <li>
+          Qualquer conduta ou conteúdo de terceiros no Serviço;
+        </li>
+        <li>
+          Conteúdo obtido do Serviço; e
+        </li>
+        <li>
+          Acesso não autorizado, uso ou alteração de suas transmissões ou conteúdo,
+          seja com base em garantia, contrato, ato ilícito (incluindo negligência) ou qualquer outra
+          teoria legal, independentemente de termos sido avisados da possibilidade de tais danos.
+        </li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2>7. Indenização</h2>
+      <p>
+        Você concorda em defender, indenizar e isentar a SpeedFunnels, seus contratados, licenciadores,
+        e seus respectivos diretores, executivos, funcionários e agentes de e contra quaisquer
+        reclamações, responsabilidades, danos, perdas e despesas, incluindo, sem limitação,
+        honorários e custos razoáveis de advogados, decorrentes de ou de qualquer forma relacionados
+        com seu acesso ou uso do Serviço, sua violação destes Termos ou sua violação de quaisquer
+        direitos de terceiros.
+      </p>
+    </div>
+
+    <div class="section">
+      <h2>8. Rescisão</h2>
+      <p>
+        Podemos rescindir ou suspender seu acesso imediatamente, sem aviso prévio ou responsabilidade,
+        por qualquer motivo, incluindo, sem limitação, se você violar os Termos.
+      </p>
+      <p>
+        Após a rescisão, seu direito de usar o Serviço cessará imediatamente. Se você deseja encerrar
+        sua conta, você pode simplesmente descontinuar o uso do Serviço ou nos notificar.
+      </p>
+    </div>
+
+    <div class="section">
+      <h2>9. Alterações ao Serviço</h2>
+      <p>
+        Reservamo-nos o direito de retirar ou modificar nosso Serviço, e qualquer serviço ou material
+        que fornecemos através do Serviço, a nosso critério, sem aviso prévio. Não seremos
+        responsáveis se, por qualquer motivo, todo ou qualquer parte do Serviço estiver indisponível
+        a qualquer momento ou por qualquer período.
+      </p>
+    </div>
+
+    <div class="section">
+      <h2>10. Alterações aos Termos</h2>
+      <p>
+        Podemos revisar e atualizar estes Termos de tempos em tempos, a nosso critério. Todas as
+        modificações entrarão em vigor imediatamente após publicarmos os termos atualizados nesta
+        página.
+      </p>
+      <p>
+        Ao continuar a acessar ou usar nosso Serviço após essas revisões se tornarem efetivas, você
+        concorda em estar vinculado aos termos revisados. Se você não concordar com os novos termos,
+        por favor, pare de usar o Serviço.
+      </p>
+    </div>
+
+    <div class="section">
+      <h2>11. Lei Aplicável</h2>
+      <p>
+        Estes Termos serão regidos e interpretados de acordo com as leis do Brasil, sem consideração
+        aos seus princípios de conflito de leis.
+      </p>
+      <p>
+        Nossa falha em fazer valer qualquer direito ou disposição destes Termos não será considerada
+        uma renúncia a esses direitos. Se qualquer disposição destes Termos for considerada inválida
+        ou inexequível por um tribunal, as disposições restantes destes Termos permanecerão em vigor.
+      </p>
+    </div>
+
+    <div class="section">
+      <h2>12. Contato</h2>
+      <p>
+        Se você tiver alguma dúvida sobre estes Termos, entre em contato conosco:
+      </p>
+      <ul>
+        <li>Por e-mail: terms@speedfunnels.com</li>
+        <li>Pelo site: https://app.speedfunnels.online/contato</li>
+      </ul>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-links">
+        <a href="https://app.speedfunnels.online">Início</a>
+        <a href="termos-de-servico.html">Termos de Serviço</a>
+        <a href="politica-privacidade.html">Política de Privacidade</a>
+      </div>
+      <div class="copyright">
+        &copy; 2025 SpeedFunnels. Todos os direitos reservados.
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
